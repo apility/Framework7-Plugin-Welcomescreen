@@ -1,0 +1,22 @@
+{
+  "name": "framework7-vue-plugin-welcomescreen",
+  "version": "1.0.0",
+  "description": "## Just a quick plugin for Framework 7",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apility/Framework7-Plugin-Welcomescreen.git"
+  },
+  "author": "Thomas Alrek <thomas@alrek.no>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apility/Framework7-Plugin-Welcomescreen/issues"
+  },
+  "homepage": "https://github.com/apility/Framework7-Plugin-Welcomescreen#readme"
+}
