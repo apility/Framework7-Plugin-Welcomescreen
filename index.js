@@ -98,15 +98,15 @@ window.Framework7.prototype.plugins.welcomescreen = function (app, globalPluginP
                 '<div class="swiper-wrapper">' +
                   '{{#each slides}}' +
                   '<div class="swiper-slide" {{#if id}}id="{{id}}"{{/if}}>' +
-                    '<div class="welcomescreen-title {{#unless title}}hide-title{{/unless}}" data-swiper-parallax="{{#if parallaxTitle}}{{parallaxTitle}}{{else}}{{../../../../options.parallaxSlideElements.title}}{{/if}}">{{#if title}}{{title}}{{else}}title{{/if}}</div>' +
+                    '<div class="welcomescreen-title {{#unless title}}hide-title{{/unless}}" data-swiper-parallax="{{#if parallaxTitle}}{{parallaxTitle}}{{else}}{{@root.options.parallaxSlideElements.title}}{{/if}}">{{#if title}}{{title}}{{else}}title{{/if}}</div>' +
                     '{{#if content}}' +
                       '<div class="welcomescreen-content">{{content}}</div>' +
                     '{{else}}' +
                       '{{#if picture}}' +
-                        '<div class="welcomescreen-picture" data-swiper-parallax="{{#if parallaxPicture}}{{parallaxPicture}}{{else}}{{../../../../options.parallaxSlideElements.subtitle}}{{/if}}">{{picture}}</div>' +
+                        '<div class="welcomescreen-picture" data-swiper-parallax="{{#if parallaxPicture}}{{parallaxPicture}}{{else}}{{@root.options.parallaxSlideElements.subtitle}}{{/if}}">{{picture}}</div>' +
                       '{{/if}}' +
                       '{{#if text}}' +
-                        '<div class="welcomescreen-text" data-swiper-parallax="{{#if parallaxText}}{{parallaxText}}{{else}}{{../../../../options.parallaxSlideElements.text}}{{/if}}">{{text}}</div>' +
+                        '<div class="welcomescreen-text" data-swiper-parallax="{{#if parallaxText}}{{parallaxText}}{{else}}{{@root.options.parallaxSlideElements.text}}{{/if}}">{{text}}</div>' +
                       '{{/if}}' +
                     '{{/if}}' +
                   '</div>' +
@@ -226,7 +226,6 @@ window.Framework7.prototype.plugins.welcomescreen = function (app, globalPluginP
       defineDefaultTemplate()
       compileTemplate()
       applyOptions()
-
       // Open on init
       if (options.open) {
         self.open()
@@ -241,3 +240,4 @@ window.Framework7.prototype.plugins.welcomescreen = function (app, globalPluginP
     return new Welcomescreen(slides, options)
   }
 }
+
